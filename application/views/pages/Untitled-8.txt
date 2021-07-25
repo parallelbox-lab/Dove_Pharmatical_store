@@ -1,0 +1,9 @@
+	<div class="product_images">
+						<div class="product_image_larges"><img src="<?php echo base_url($post['mainimage']);?>" alt="" ></div>
+						<div class="product_image_thumbnails d-flex flex-row align-items-start justify-content-start">
+							<div class="product_image_thumbnailc" style="background-image:url(<?php echo base_url($post['mainimage']);?>)" data-image="<?php echo base_url($post['mainimage']);?>"></div>
+							<div class="product_image_thumbnailc" style="background-image:url(<?php echo base_url($post['mainimage']);?>)" data-image="images/product_image_2.jpg"></div>
+							<div class="product_image_thumbnailc" style="background-image:url(<?php echo base_url($post['mainimage']);?>)" data-image="images/product_image_4.jpg"></div>
+						</div>
+					</div>
+				</div>
