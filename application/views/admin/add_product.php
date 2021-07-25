@@ -18,7 +18,7 @@
             <div class="form-group">
                 <label class="col-md-3">Price</label>
                 <div class="col-md-9">
-                    <input type="text" name="price" class="form-control" placeholder="Enter Product description">
+                    <input type="text" name="price" class="form-control" placeholder="Enter Product price">
                 </div>
             </div>
         </div>
@@ -30,7 +30,11 @@
                 </div>
             </div>
         </div>
-        
+        <div class="form-group">
+                <label class="text-dark">Product image upload </label>	
+                <br/> 
+            <input type="file" name="userfile" class=""/>
+                 </div>
         <div class="col-md-8 col-md-offset-2 pull-right">
             <input type="submit" name="Save" class="btn btn-success text-white btn-lg">
         </div>
