@@ -2,7 +2,9 @@
 class Appoinment_controller extends CI_Controller{
 
     public function appoinment(){
-        $this->load->view("config/header");
+        $data['title'] ="";
+        $data['desc'] ="";
+        $this->load->view("config/header",$data);
         $this->load->view("pages/appoinment");
         $this->load->view("config/footer");
     }

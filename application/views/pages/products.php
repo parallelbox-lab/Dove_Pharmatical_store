@@ -1,85 +1,142 @@
 <main class="main">
-<div class="bradcam_area bradcam_bg_1" style="background-image:url(<?php echo base_url();?>asset/img/hero2.png)">
+<section class="breadcrumb-option">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
-                    <div class="bradcam_text text-center">
-                        <div class="breadcrumb__text">
-                        <h3>Products </h3>
-                    
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="page-content mt-4 pt-4">
-                <div class="container">
-                	<div class="row">
-                		<div class="col">
-                			<div class="toolbox">
-                			
-                			
-                            <div class="products-container mt-5" data-layout="fitRows">
-        <?php foreach($data as $row) { ?>
-
-            <div class="product-item furniture  col-md-4 ">
-                <div class="product product-4">
-                    <figure class="product-media">
-                        <a href="<?= base_url();?>products/<?= $row->slug;?>">
-                            <img src="<?php echo base_url();?>asset/img/<?= $row->product_image ?>" alt="Product image" class="product-image">
-                        </a>
-
-
-
-
-                        <!-- End .product-action -->
-                    </figure>
-                    <!-- End .product-media -->
-
-                    <div class="product-body">
-                        <h3 class="product-title"><a href="<?php echo base_url(); ?>products/<?php echo $row->slug; ?>"><?= $row->product_name; ?></a></h3>
-                        <!-- End .product-title -->
-                        <div class="price-box">
-                            <p class="regular-product ">
-                                <span><span class="money" data-currency-usd="$210.00">NGN <?= $row->price; ?></span></span>
-                            </p>
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Shop</h4>
+                        <div class="breadcrumb__links">
+                            <a href="<?php echo base_url();?>">Home</a>
+                            <a href="<?php echo base_url();?>products">Shop</a>
                         </div>
-                        <!--  <div class="product-action">
-                                <a href="#" class="btn-product btn-cart"><span>add to cart</span><i class="icon-long-arrow-right"></i></a>
-                            </div> -->
-                        <!-- End .product-action -->
                     </div>
-                    <!-- End .product-body -->
                 </div>
-
-                <!-- End .product -->
             </div>
-            <!-- End .product-item -->
-            <!-- End .product-item -->
-            <?php } ?>
-
         </div>
-                			<nav aria-label="Page navigation">
-							    <ul class="pagination">
-							        <li class="page-item disabled">
-							            <a class="page-link page-link-prev" href="#" aria-label="Previous" tabindex="-1" aria-disabled="true">
-							                <span aria-hidden="true"><i class="icon-long-arrow-left"></i></span>Prev
-							            </a>
-							        </li>
-							        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-							        <li class="page-item"><a class="page-link" href="#">2</a></li>
-							        <li class="page-item"><a class="page-link" href="#">3</a></li>
-							        <li class="page-item-total">of 6</li>
-							        <li class="page-item">
-							            <a class="page-link page-link-next" href="#" aria-label="Next">
-							                Next <span aria-hidden="true"><i class="icon-long-arrow-right"></i></span>
-							            </a>
-							        </li>
-							    </ul>
-							</nav>
-                		</div><!-- End .col-lg-9 -->
-                	
-                	</div><!-- End .row -->
-                </div><!-- End .container -->
+    </section>
+
+    <!-- Shop Section Begin -->
+    <section class="shop spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="shop__sidebar">
+                        <div class="shop__sidebar__accordion">
+                            <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseTwo">Categories</a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="shop__sidebar__brand">
+                                                <ul>
+                                                    						<?php foreach ($categories as $category) : ?>
+
+                                                    <li><a href="<?php echo base_url('products/category/' . $category->slug) ?>">									<?php echo $category->category_name ?>
+</a></li>
+                                            						<?php endforeach; ?>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="shop__product__option margin-top-5-des">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="shop__product__option__left">
+                                    <p><?php echo "Showing 1-9 " . $total_rows; ?> Results</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                     <?php $this->load->view('admin/flash'); ?>
+
+                    <div class="row">
+                      <?php foreach($data as   $row){ ?>
+                           <div class="col-lg-4 col-md-6 col-sm-6">
+                           <a href="<?php echo base_url(); ?>products/<?php echo $row->slug; ?>">
+                            <div class="product__item">
+                                <!-- <div class="product__item__pic set-bg" data-setbg="">
+                                    
+                                </div> -->
+                                <img src="<?php echo base_url();?>asset/img/<?= $row->product_image ?>" alt="<?= $row->product_name ?>" class="w-100 p-img"/>
+                                <div class="product__item__text">
+                                    <h6><?= $row->product_name ?></h6>
+                                   
+                                    <h5>NGN <?= number_format($row->price) ?></h5>
+                                 
+                                </div>
+                            </div>
+                               </a>
+                        </div>
+                        <?php } ?>
+                          
+                    </div>
+                    <div class="empty-product text-left">
+                        <?php if($data == null){ ?>
+  <?php echo "<p style='font-size:24px;text-align:center' >No Product Available</p>"; ?>                      <?php  } ?>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="product__pagination">
+                            <?php echo $links; ?>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+    <!-- Shop Section End -->
+      
+         
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,61 +4,77 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="https://dovemultinationalinvnig.org/asset/img/dove.jpg">
 <title>404 Page Not Found</title>
 <style type="text/css">
+body{
+    margin:0;
+    padding:0;   
+    background: #f0f0f0;
+    height:100vh;
 
-::selection { background-color: #E13300; color: white; }
-::-moz-selection { background-color: #E13300; color: white; }
-
-body {
-	background-color: #fff;
-	margin: 40px;
-	font: 13px/20px normal Helvetica, Arial, sans-serif;
-	color: #4F5155;
 }
-
-a {
-	color: #003399;
-	background-color: transparent;
-	font-weight: normal;
+#main {
+    background: #fff;
 }
-
-h1 {
-	color: #444;
-	background-color: transparent;
-	border-bottom: 1px solid #D0D0D0;
-	font-size: 19px;
-	font-weight: normal;
-	margin: 0 0 14px 0;
-	padding: 14px 15px 10px 15px;
+#error_page {
+    padding: 150px 0;
+    background: #f0f0f0;
 }
-
-code {
-	font-family: Consolas, Monaco, Courier New, Courier, monospace;
-	font-size: 12px;
-	background-color: #f9f9f9;
-	border: 1px solid #D0D0D0;
-	color: #002166;
-	display: block;
-	margin: 14px 0 14px 0;
-	padding: 12px 10px 12px 10px;
+#error_page .error_logo {
+    background: url(../asset/img/error_logo.jpg) no-repeat center center;
+    height: 225px;
 }
-
-#container {
-	margin: 10px;
-	border: 1px solid #D0D0D0;
-	box-shadow: 0 0 8px #D0D0D0;
+#error_page .sw {
+    width: 558px;
+    margin: 0 auto;
 }
+#error_page .error_warning {
+    margin-top: 12px;
+    height: 30px;
+    line-height: 30px;
+    background: url(../asset/img/error_warning.jpg) no-repeat left center;
+    text-indent: 49px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:14px;
 
-p {
-	margin: 12px 15px 12px 15px;
+}
+#error_page .sw {
+    width: 558px;
+    margin: 0 auto;
+}
+#error_page .error_nav {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #727272;
+}
+#error_page .sw {
+    width: 558px;
+    margin: 0 auto;
+}
+#error_page .error_nav>a {
+    margin: 0 36px;
+    font-size: 18px;
+    color: #727272;
+    text-decoration:none;
 }
 </style>
 </head>
 <body>
-	<div id="container">
-		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
+    <div id="main">
+    <div id="error_page" class="w">
+		<div class="error_logo sw"></div>
+		<div class="error_warning sw">		<?php echo $message; ?>
+</div>
+		<div class="error_nav sw" style="margin-top:17px;"><a href="https://dovemultinationalinvnig.org/">Home Page</a>|<a href="#">Go Back</a></div>
 	</div>
+</div>
+	<!--<div id="container">-->
+	<!--	<h1><?php echo $heading; ?></h1>-->
+	<!--</div>-->
 </body>
 </html>

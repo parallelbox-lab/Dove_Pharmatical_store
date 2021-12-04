@@ -90,8 +90,9 @@
                         <!-- ============================================================== -->
                         <li>
                             <a class="profile-pic" href="#">
-                               <span class="text-white font-medium"><b>Pharm</b> <?php echo $account['fullname']; ?></span></a>
+                               <span class="text-white font-medium"><?php echo $account['fullname']; ?></span></a>
                         </li>
+                        
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
@@ -113,19 +114,19 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('cw12345admin');?>"
                                 aria-expanded="false">
                                 <i class="far fa-clock" aria-hidden="true"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
+                       <!-- <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url('cw12345admin/add-admin');?>"
                                 aria-expanded="false">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <span class="hide-menu">Add New Admin</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('cw12345admin/products');?>"
                                 aria-expanded="false">
@@ -133,14 +134,24 @@
                                 <span class="hide-menu">Products</span>
                             </a>
                         </li>
-                      
+
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-li                                   nk" href="404.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('cw12345admin/appoinments');?>"
                                 aria-expanded="false">
-                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <span class="hide-menu">Error 404</span>
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <span class="hide-menu">Appoinments</span>
                             </a>
                         </li>
+                      
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?php echo base_url('cw12345admin/categories');?>"
+                                aria-expanded="false">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <span class="hide-menu">categories</span>
+                            </a>
+                        </li>
+                      
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="<?= base_url('logout');?>"
                                 aria-expanded="false">

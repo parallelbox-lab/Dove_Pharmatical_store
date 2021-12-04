@@ -5,7 +5,7 @@
 <script src="<?php echo base_url();?>asset/js/jquery/jquery-2.2.4.min.js"></script>
 <div class="wrapper fadeInDown">
 <?php 
-  $this->load->view('Admin/flash'); 
+  $this->load->view('admin/flash'); 
   ?>
   <div id="formContent">
     <!-- Tabs Titles -->
@@ -20,9 +20,9 @@
                         echo '<div style="color:red" >Invalid Fullname and Password.<br/> Please try again.</div><br/>';
                     }?>
     <!-- Login Form -->
-    <form action="" method="post">
+<?= form_open() ?>
 <div class="form-group">
-      <input type="text"  <?php if (form_error('fullname') !=='') { echo 'id="border-danger"'; } ?> class="fadeIn second" name="fullname" value="<?php echo set_value('fullname'); ?>" placeholder="login">
+      <input type="text"  <?php if (form_error('fullname') !=='') { echo 'id="border-danger"'; } ?> class="fadeIn second" name="fullname" value="<?php echo set_value('fullname'); ?>" placeholder="Enter Username">
       <span class="text-danger"><?php echo form_error('fullname'); ?></span>
       </div>
       <div class="form-group">
@@ -32,14 +32,9 @@
    <div class="form-group">
    <input type="submit" class="fadeIn fourth" name="submit" value="Log In">
    </div>
-    </form>
-
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
-    </div>
-
+  <?= form_close() ?>
   </div>
 </div>
+
 <script src="<?php echo base_url();?>asset/admin/plugins/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?php echo base_url();?>asset/js/main.js"></script>

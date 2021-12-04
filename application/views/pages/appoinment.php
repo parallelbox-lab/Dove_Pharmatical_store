@@ -5,19 +5,17 @@
 
 
 
-<section class="appoint-container">
+<section class="appoint-container" >
     <div class="container">
         <div class="row">
-            <div class="col-md-7 mb-5">
+            <div class="col-md-7" style="margin-bottom:60px">
                 <div class="card p-4">
                 <div id="success_msg" class="alert alert-success" style="display: none;">Message Sent. Please Check your mail later to get our response</div>
                         <div id="error_msg" class="alert alert-danger" style="display: none;">Sorry, Message Not Sent. Try again later.</div>
                         <div id="error_message"></div>
                     <h3 class="text-center b-4">Request Appointment with Pharm. Kayode Fasuba</h3>
                     <form class="mt-4" method="POST" id="appoinment_form">
-                        <div class="form-group">
-                            <input type="text" readonly placeholder="Dove Pharmaticals" class="form-control">
-                        </div>
+                     
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
@@ -57,15 +55,10 @@
                           </select>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <select name="age" id="age" class="form-control">
-                                <option value>-- Age Range --</option>
-                                <option value="12-25">From Age 12 to 25 Years</option>
-                                <option value="Female">Female</option>
-                            </select>
-                                </div>
-                            </div>
+                           
+                        </div>
+                        <div class="form-group">
+                            <textarea name="description" id="" class="form-control" placeholder="Purpose of Appoinment" style="resize:none;"></textarea>
                         </div>
                         <button class="btn appoinment-btn">Submit Appoinment <img src="<?php echo base_url();?>asset/img/msg_loader.gif" class="img-responsive msg-loader" style="width: 40px; height: 40px;display:none;" alt="loader"></button>
                     </form>

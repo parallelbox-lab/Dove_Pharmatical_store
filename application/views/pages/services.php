@@ -4,7 +4,7 @@
                 <div class="col-xl-12">
                     <div class="bradcam_text text-center">
                         <div class="breadcrumb__text">
-                        <h3>Our Services </h3>
+                        <h3><b>Our Services </b></h3>
                     </div>
                     </div>
                 </div>
@@ -94,8 +94,6 @@
           </div>
 
         </div>
-        <div class="text-center">
-        <a href="<?php echo base_url();?>appoinment " class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s" tabindex="0" style="animation-delay: 0.5s;">Book Appointment</a>
-        </div>
+       
       </div>
     </section>

@@ -5,10 +5,11 @@
                 <div class="single-footer-widget">
                     <h6>Useful Links</h6>
                     <ul class="footer-nav">
-                        <li><a href="#">About Dove</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Book Appoinment</a></li>
-                        <li><a href="#">Marketing Service</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="<?= base_url();?>about-us">About us</a></li>
+                        <li><a href="<?= base_url();?>products">Products</a></li>
+                        <li><a href="<?= base_url();?>services">Our Services</a></li>
+                         <li><a href="<?= base_url();?>contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -16,10 +17,15 @@
                 <div class="single-footer-widget mail-chimp">
                     <h6 class="mb-20">Contact Us</h6>
                     <p>
-                        56/8, bir uttam qazi nuruzzaman road, west panthapath, kalabagan, Dhanmondi, Dhaka - 1205
+                        <b>Abuja Branch</b><br>
+                        House 2 benny odegha close, sunshine home estate lokogoma area Abuja
                     </p>
-                    <h3>012-6532-568-9746</h3>
-                    <h3>012-6532-568-97468</h3>
+                    <p>
+                        <b>Ado Ekiti Branch</b><br/>
+                        <p>Wohem Avenue beside Irewolede estate off ilawe road Ado Ekiti state</p>
+                    </p>
+                    <h3></h3>
+                    <p><a href="tel:+2347038475418" class="text-white">+2347038475418</a></p>
                 </div>
             </div>
             <div class="col-lg-6  col-md-12">
@@ -55,7 +61,6 @@
                 <script>
                     document.write(new Date().getFullYear());
                 </script> All rights reserved | Developed by <a href="https://parallelbox.ng" target="_blank">Parallelbox</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             <div class="col-lg-4 col-sm-12 footer-social">
                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -69,10 +74,14 @@
 <!-- End footer Area -->
 
 <script src="<?php echo base_url();?>asset/js/jquery-3.2.1.min.js"></script>
-<script src="<?php echo base_url();?>asset/js/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="<?php echo base_url();?>asset/js/slick.min.js"></script>
 <script src="<?php echo base_url();?>asset/js/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js" integrity="sha512-zlWWyZq71UMApAjih4WkaRpikgY9Bz1oXIW5G0fED4vk14JjGlQ1UmkGM392jEULP8jbNMiwLWdM8Z87Hu88Fw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="<?php echo base_url();?>asset/js/bootstrap/popper.min.js"></script>
 <script src="<?php echo base_url();?>asset/js/scripts.js"></script>
+<script src="<?php echo base_url();?>asset/js/jquery.nice-select.js"></script>
 <script src="<?php echo base_url();?>asset/js/main.js"></script>
 
 

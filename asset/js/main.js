@@ -7,19 +7,90 @@
             'overflow': 'visible'
         });
     });
-
+    
+    
     $(window).on("scroll", function() {
         if ($(window).scrollTop() > 50) { $(".header-container").addClass("header-scrolled"); } else {
             $(".header-container").removeClass("header-scrolled");
         }
     });
 
-    $(document).ready(function() {
         $('#toggle').on('click', function() {
-            $('#nav').toggleClass('visible');
+            var menu = $('#nav');
+            menu.toggleClass('visible');
+        
+            console.log('clicked');
+            var icon = $('.icons');
         });
+
+             // Updating cart id using ajax
+      $(".itemQty").on('change',function(){
+        var csrfName = $('.csrf').attr('name');
+        var csrfHash = $('.csrf').val();
+        var el = $(this).closest('tr');
+        var id = $(el).find('#rowid').val();
+        var qty = $(this).val();
+        
+        console.log(id);
+        $.ajax({
+            'url' : 'update-cart-qty',
+            'type' : 'POST',
+            'data' : {'id':id,'qty':qty,[csrfName]:csrfHash},
+            success: function(result){
+            // update csrf
+            $('.csrf').val(result.token);
+            window.location.href='';
+             }    
+            });
     });
 
+    // 
+		$('.home-slider').owlCarousel({
+	    loop:true,
+	    autoplay: true,
+	    margin:0,
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
+	    nav:false,
+	    autoplayHoverPause: false,
+	    items: 1,
+	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
+	    responsive:{
+	      0:{
+	        items:1,
+	        nav:false
+	      },
+	      600:{
+	        items:1,
+	        nav:false
+	      },
+	      1000:{
+	        items:1,
+	        nav:false
+	      }
+	    }
+		});
+/*==============================
+    Search
+    ==============================*/
+    $('.header__search-btn').on('click', function() {
+        $(this).toggleClass('active');
+        $('.header__search').toggleClass('header__search--active');
+
+        if ($('.header__btn').hasClass('header__btn--active')) {
+            $('.header__btn').toggleClass('header__btn--active');
+            $('.header__nav').toggleClass('header__nav--active');
+            $('.body').toggleClass('body--active');
+        }
+    });
+
+    /*------------------
+           Background Set
+       --------------------*/
+    $('.set-bg').each(function() {
+        var bg = $(this).data('setbg');
+        $(this).css('background-image', 'url(' + bg + ')');
+    });
 
     /*==================================================================
     [ Show / hide modal search ]*/
@@ -28,7 +99,8 @@
         $(this).css('opacity', '0');
 
     });
-
+    
+   //
     $('.js-hide-modal-search').on('click', function() {
         $('.modal-search-header').removeClass('show-modal-search');
         $('.js-show-modal-search').css('opacity', '1');
@@ -37,14 +109,31 @@
     $('.container-search-header').on('click', function(e) {
         e.stopPropagation();
     });
+  
+  
+  // clear notification
+    setTimeout(function() {
+        $('.timeout').fadeOut("slow");
 
+    }, 4000);
+  
     // logout animation
 
     setTimeout(function() {
         $('.logout-flash').fadeOut("slow");
 
     }, 3000);
-
+    //account popover
+    var popover = function(){
+        $('#account-popover').popover({
+            html:true,
+            container:'body',
+            content:function(){
+                return $('#popover').html();
+            }
+        });
+    };
+  popover();
     // navigation
     var OnePageNavigation = function() {
         var navToggler = $('.site-menu-toggle');
@@ -61,7 +150,37 @@
 
         });
     };
+    
     OnePageNavigation();
+ 
+    // product slider
+    $('.owl-carousel').owlCarousel({
+		    items:4,
+		    lazyLoad:true,
+		    loop:true,
+		    dots:true,
+		    margin:20,
+		    responsiveClass:true,
+			    responsive:{
+			        0:{
+			            items:1,
+			        },
+			        500:{
+			            items:2
+			        },
+			        600:{
+			            items:2,
+			        },
+			        
+			        800:{
+			          items:3,  
+			        },
+			        1000:{
+			            items:4,
+			        }
+			    }
+		});
+      
     /* =============
     Bootstrap carousel
     */
@@ -71,7 +190,7 @@
         /* ==========================================================
     [datepicker function]
 */
-    $("#datepicker").datepicker();
+    // $("#datepicker").datepicker();
 
     jQuery(document).ready(function() {
         jQuery("#success_msg").hide();

@@ -1,96 +1,107 @@
-<!-- end header ar  ea -->
-<!-- start banner area -->
 
-		<div class="carousel slide" id="main-carousel" data-ride="carousel">
-	<!--	<ol class="carousel-indicators">
-				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#main-carousel" data-slide-to="1"></li>
-				<li data-target="#main-carousel" data-slide-to="2"></li>
-				<li data-target="#main-carousel" data-slide-to="3"></li>
-			</ol> --> <!-- /.carousel-indicators --> 
-			
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-                <section class="banner bg-img">
-	<div class="container-fluid">
-    <div class="banner-text">
-                <h1>Dove Multinational <br/> Investment Limited</h1>
-                    <p class="mt-4 mb-3">Lorem Ipsum Dolor Sit Amin PiggyVest helps you achieve financial freedom by enabling you save responsibly and invest on the go.</p>
-                    <a href="<?php echo base_url();?>appoinment " class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s" tabindex="0" style="animation-delay: 0.5s;">Appointment <i class="zmdi zmdi-arrow-right" style="line-height: 11px;"></i></a>
-    </div>
-    </div>
-   </section>
-				</div>
-				<div class="carousel-item">
-				
-                <section class="banner bg-img">
-	<div class="container-fluid">
-    <div class="banner-text">
-                <h1>Dove Multinational <br/> Investment Limited</h1>
-                    <p class="mt-4 mb-3">Lorem Ipsum Dolor Sit Amin PiggyVest helps you achieve financial freedom by enabling you save responsibly and invest on the go.</p>
-                    <a href="<?php echo base_url();?>appoinment " class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s" tabindex="0" style="animation-delay: 0.5s;">Appointment <i class="zmdi zmdi-arrow-right" style="line-height: 11px;"></i></a>
-</div>
-</div>
-</section>
-				</div>
-				<div class="carousel-item">
-					
-                <section class="banner bg-img">
-	<div class="container-fluid">
-    <div class="banner-text">
-                <h1>Dove Multinational <br/> Investment Limited</h1>
-                    <p class="mt-4 mb-3">Lorem Ipsum Dolor Sit Amin PiggyVest helps you achieve financial freedom by enabling you save responsibly and invest on the go.</p>
-                    <a href="<?php echo base_url();?>appoinment " class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s" tabindex="0" style="animation-delay: 0.5s;">Appointment <i class="zmdi zmdi-arrow-right" style="line-height: 11px;"></i></a>
-</div>
-</div>
-</section>
-				</div>
-				<div class="carousel-item">
-                <section class="banner bg-img">
-	<div class="container-fluid">
-    <div class="banner-text">
-                <h1>Dove Multinational <br/> Investment Limited</h1>
-                    <p class="mt-4 mb-3">Lorem Ipsum Dolor Sit Amin PiggyVest helps you achieve financial freedom by enabling you save responsibly and invest on the go.</p>
-                    <a href="<?php echo base_url();?>appoinment " class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s" tabindex="0" style="animation-delay: 0.5s;">Appointment <i class="zmdi zmdi-arrow-right" style="line-height: 11px;"></i></a>
-</div>
-</div>
+    <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image: url('<?= base_url();?>asset/img/marcel-scholte-LPurJnihmQI-unsplash.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text align-items-center" data-scrollax-parent="true">
+            <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Dove Multinational  Investment Limited</h1>
+              <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Dove Multinational is making it easier and more affordable for every hospital, clinics and medical practice to have the very best equipment, supplies and service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</section>
+      <div class="slider-item" style="background-image: url('<?= base_url();?>asset/img/Pharm-baby.png');">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text align-items-center" data-scrollax-parent="true">
+            <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Modern Achieve Your Desired Perfect Smile</h1>
+              <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				</div>
-			</div><!-- /.carousel-inner -->
-			
-            <a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-       </div>
+
+
 	
-<!-- <section class="banner bg-img" style="display:none; ">
-
-    <div class="container-fluid">
-        <div class="banner-text">
-            <div class="row">
-                <div class="col-xl-7 col-lg-9 col-md-8 col-sm-9">
-
-                    <h1>Dove Multinational <br/> Investment Limited</h1>
-                    <p class="mt-4 mb-3">Lorem Ipsum Dolor Sit Amin PiggyVest helps you achieve financial freedom by enabling you save responsibly and invest on the go.</p>
-                    <a href="<?php echo base_url();?>appoinment " class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.5s" tabindex="0" style="animation-delay: 0.5s;">Appointment <i class="zmdi zmdi-arrow-right" style="line-height: 11px;"></i></a>
-
+ <!-- Featured Starts Here -->
+    <div class="featured-items spad">
+      <div class="container">
+               <?php if($data !== Null) { ?>
+            <div class="product-cat">
+                <div class="text-dark text-left">
+                    <h3 style="font-weight:900">Featurd Products</h3>
                 </div>
-
-                <div class="col-md-5">
-
+                <div class="text-dark text-left">
+                    <p style="font-weight:900"><a href="<?= base_url();?>products">View All</a></p>
                 </div>
             </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+                <?php foreach($data as $row) { ?>
+              <a href="<?php echo base_url(); ?>products/<?php echo $row->slug; ?>">
+                <div class="featured-item">
+                  <img src="<?php echo base_url();?>asset/img/<?= $row->product_image ?>" alt="Item 1">
+                  <h4><?php echo word_limiter($row->product_name , 4, '...'); ?></h4>
+                  <h6>NGN <?= $row->price; ?></h6>
+                </div>
+              </a>
+            <?php } ?>
+            </div>
+          </div>
         </div>
-</section> -->
-<!-- End of Banner Section -->
-<!-- Beginning of About us section  -->
+        <?php } ?>
+               <?php if($data == Null){ ?>
+       <?php echo "<p style='font-size:24px;text-align:center' >No Product Available</p>"; ?>
+ <?php } ?>
+
+      </div>
+    </div>
+    
+<div class="product-cats spad">
+    <div class="container">
+         <div class="product-header">
+                <h2>Shop By Category</h2>
+            </div>
+        <div class="rows">
+           
+            <div class="product-body-c">
+                <a href="<?= base_url();?>products/category/Novel-Medical-Equipment">
+                    <div class="product-body">
+                        <img src="<?= base_url();?>asset/img/7082293.png" class="" alt="Medical Equipments"/>
+                        <h4>Medical Equipments</h4>
+                    </div>
+                </a>
+                  <a href="<?= base_url();?>products/category/Novel-teaching-equipment">
+                    <div class="product-body">
+                        <img src="<?= base_url();?>asset/img/580px-Q16917-hospital.svg.png" class="" alt="Novel Teaching Equipment
+"/>
+                        <h4>Teaching Equipments
+</h4>
+                    </div>
+                </a>
+                  <a href="<?= base_url();?>products/category/Novel-hospital-equipment">
+                    <div class="product-body">
+                        <img src="<? base_url();?>asset/img/icons8-equipment-64.png" class="" alt="hospital Equipments image"/>
+                        <h4>Hospital Equipments</h4>
+                    </div>
+                </a>
+                  <a href="<?= base_url();?>products/category/Laboratory-reagents-and-Hospital%20consumables">
+                    <div class="product-body">
+                        <img src="<?= base_url();?>asset/img/5383212.png" class="" alt="Medical Equipments"/>
+                        <h4>Hospital Consumables</h4>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
 <div class="about-area section-padding2" id="about-us">
     <div class="container">
         <div class="row">
@@ -102,10 +113,8 @@
                         <h2>A Wealth Of Experience To Heal And Help You</h2>
                     </div>
                     <p>
-                    Dove Limited (RC1795662) is a wholly Nigerian firm engaging in Pharmaceuticals, Laboratory, Medical [Therapeutic and Teaching systems] and consultancy. We commenced business in 2021 as a Medical equipment and Pharmaceutical company. Our head office is located at Abuja and another branch in Ado Ekiti.
-We represent in Nigeria and <span id="dots">...</span><span id="more"> the West Coast the giant life science equipment manufacturer, ADIstruments of Australia. We are also the Sole Representative in Nigeria for Invacare, manufacturers of Homecare & Disability products e.g. everyday Wheelchairs and for sports. Our staffs have undergone training in Invacare facilities in France and we do attend regularly ADInstruments distributors training workshops which enable us provide after-sales maintenance services for users of our products.
-Our products for the Physically-Challenged have enabled us to be involved in conducting wheelchair sports clinics. We also collaborate with critical stakeholders, viz: Wheelchair sports clubs and coaches, National Olympics Committee, Spinal Cord Injury Association of Nigeria [SCIAN] and Wheelchair sports associations among others. This business line provides a platform for us to reach out to the less privileged in our society as a form of corporate social responsibility.
-                   </span> </p>
+                    Dove Multinational Invesment Limited (RC1795662) is a wholly Nigerian firm engaging in sales of Medical Euqipments, Pharmaceuticals, Laboratory, hospital equipments, and consultancy. We commenced business in 2021 as a Multinational Investment
+<span id="dots">...</span><span id="more"> limited in Nigeria. Our head office is located at Abuja and another branch in Ado Ekiti. Our Main Aim is to Provide Affordable Equipments and offer Medical Advisory Services  </span></p>
                    <div class="text-left"> <a onclick="readMore()" class="btn read-more text-white" id="myBtn">Read more</a></div>
 
 
@@ -147,7 +156,7 @@ Our products for the Physically-Challenged have enabled us to be involved in con
                         <li class="nav-item">
                             <a class="nav-link active show" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                                 <i class="flaticon-teeth"></i>
-                                <h4>Novel Medical Equipment</h4>
+                                <h4>Novel Medical Equipments</h4>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -165,7 +174,7 @@ Our products for the Physically-Challenged have enabled us to be involved in con
                         <li class="nav-item">
                             <a class="nav-link" id="Astrology-tab" data-toggle="tab" href="#Astrology" role="tab" aria-controls="contact" aria-selected="false">
                                 <i class="zmdi zmdi-bone"></i>
-                                <h4>Equipment supply,installation and Maintenence</h4>
+                                <h4>Equipment supply,installation and Maintenance</h4>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -191,8 +200,8 @@ Our products for the Physically-Challenged have enabled us to be involved in con
                     <div class="row align-items-center no-gutters">
                         <div class="col-lg-12">
                             <div class="dept_info">
-                                <h3>Dentist with surgical mask holding <br> scaler near patient</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                <h3>Novel Medical Equipments</h3>
+                                <p>The devices or machines that are used in medical surgeries called as Medical Equipments. It is also known as armamentarium. They are used to diagnose certain diseases. Treatment equipment includes infusion pumps, medical lasers and LASIK surgical machines. Medical laboratory equipment automates or helps analyze blood, urine, genes, and dissolved gases in the blood. .
                                 </p>
                                 
                                 <!--             <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a> -->
@@ -207,8 +216,8 @@ Our products for the Physically-Challenged have enabled us to be involved in con
                     <div class="row align-items-center no-gutters">
                         <div class="col-lg-12">
                             <div class="dept_info">
-                                <h3>Dentist with surgical mask holding <br> scaler near patient</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                <h3>Novel Teaching Equipment</h3>
+                                <p> A novel teaching method composed of Self-study, Test, Question and Discussion (STQD) sessions uses self-, peer-, co-learning, active learning, inductive teaching, and formative assessment to promote student-centered teaching in pharmacy education. STQD has been implemented within courses focusing on instrumental analysis and analytical chemistry. In a four-year study, qualitative and quantitative approaches were used to evaluate the effectiveness of STQD in facilitating students’ learning
                                 </p>
                                 <!--             <a href="#" class="dep-btn">Appointment<i class="ti-arrow-right"></i></a> -->
                             </div>
@@ -285,59 +294,3 @@ Our products for the Physically-Challenged have enabled us to be involved in con
 
     </div>
 </div>
-
-<section class="our-products section-padding2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-tittle text-center mb-100">
-                    <span>Some of Our Selected Products</span>
-                    <h2>We Sell and Install Medical Equipments</h2>
-                </div>
-            </div>
-        </div>
-        <div class="products-container mt-5" data-layout="fitRows">
-        <?php foreach($data as $row) { ?>
-
-            <div class="product-item furniture  col-md-4 ">
-                <div class="product product-4">
-                    <figure class="product-media">
-                        <a href="<?= base_url();?>products/<?= $row->slug;?>">
-                            <img src="<?php echo base_url();?>asset/img/<?= $row->product_image ?>" alt="Product image" class="product-image">
-                        </a>
-
-
-
-
-                        <!-- End .product-action -->
-                    </figure>
-                    <!-- End .product-media -->
-
-                    <div class="product-body">
-                        <h3 class="product-title"><a href="<?php echo base_url(); ?>products/<?php echo $row->slug; ?>"><?= $row->product_name; ?></a></h3>
-                        <!-- End .product-title -->
-                        <div class="price-box">
-                            <p class="regular-product ">
-                                <span><span class="money" >NGN <?= number_format($row->price); ?></span></span>
-                            </p>
-                        </div>
-                        <!--  <div class="product-action">
-                                <a href="#" class="btn-product btn-cart"><span>add to cart</span><i class="icon-long-arrow-right"></i></a>
-                            </div> -->
-                        <!-- End .product-action -->
-                    </div>
-                    <!-- End .product-body -->
-                </div>
-
-                <!-- End .product -->
-            </div>
-            <!-- End .product-item -->
-            <!-- End .product-item -->
-            <?php } ?>
-
-        </div>
-        <div class="text-center"><a href="<?php echo base_url();?>products" class="btn btn-services">View More Products</a></div>
-
-
-    </div>
-</section>

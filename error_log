@@ -1,0 +1,1 @@
+[27-Aug-2021 22:12:36 America/Chicago] PHP Fatal error:  Can't use method return value in write context in /home1/dovemult/public_html/application/controllers/User_controller.php on line 168
