@@ -1,2 +1,2 @@
-# dove_project
- dove Pharmicals project
+# Dove Multinational store
+Seller of all kinds  of medical equipments
